@@ -1,0 +1,5 @@
+﻿# Ignore application and debug logs
+*.log
+
+# Ignore temporary workspace files
+temp/
