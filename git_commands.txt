@@ -1,0 +1,72 @@
+﻿GIT COMMANDS USED
+=================
+
+1) git init -b main
+Initializes the local project folder as a Git repository and names the starting branch main.
+
+2) git add index.html about.html
+Stages the two starter HTML pages for the first commit.
+
+3) git commit -m "Create initial two-page project"
+Records the initial project state in the repository history.
+
+4) git add index.html
+Stages the updated home page after the welcome message was added.
+
+5) git commit -m "Update home page welcome message"
+Creates the second commit with the home page change.
+
+6) git switch -c feature
+Creates the feature branch and switches the working copy to it.
+
+7) git add about.html
+Stages the feature branch edit to the About page.
+
+8) git commit -m "Add project history note on feature branch"
+Records the feature branch change as its own commit.
+
+9) git switch main
+Returns the working copy to the main branch before integrating the feature.
+
+10) git merge --no-ff feature -m "Merge feature branch into main"
+Merges the feature branch into main and preserves a distinct merge commit.
+
+11) git add .gitignore
+Stages the ignore rules for log files and the temp/ folder.
+
+12) git commit -m "Ignore log files and temporary folder"
+Records the repository ignore rules in a commit.
+
+13) git add undo-demo.txt
+Stages a demonstration file so its addition can be undone visibly.
+
+14) git commit -m "Add temporary undo demonstration file"
+Creates an extra commit that is used to demonstrate an undo operation.
+
+15) git revert --no-edit HEAD
+Reverses the latest commit by creating a new commit; prior history is retained and undo-demo.txt is removed.
+
+16) git status --short --branch
+Shows the current branch and whether tracked or untracked changes remain.
+
+17) git log --oneline --decorate --graph --all
+Displays commits and branch/merge relationships in a compact graph.
+
+18) git ls-remote --heads origin
+Checks which branch references currently exist on the GitHub remote.
+
+19) git fetch origin
+Downloads remote references and objects so the local repository can compare with GitHub.
+
+20) git remote set-url origin https://github.com/devarshishimpi/git-workflow-sdp-sga2.git
+Sets the local origin remote URL to the public GitHub repository.
+
+21) git push -u origin main
+Publishes main and sets its upstream tracking branch.
+
+22) git push -u origin feature
+Publishes feature and sets its upstream tracking branch.
+
+GitHub CLI command used:
+  gh repo view --json nameWithOwner,url,visibility
+Checks the repository name, URL, and public visibility.
